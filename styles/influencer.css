@@ -1,0 +1,255 @@
+/* work sens font */
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@700&display=swap');
+
+body {
+    font-family: Poppins;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+
+/* shared styles */
+
+.text-grey{
+    color: #3a3a3a;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 0px;
+  
+}
+.section-title{
+    color: #3a3a3a;
+    font-size: 30px;
+    font-weight:800;
+}
+main{
+    width: 1440px;
+    margin: 0 auto;
+}
+
+
+/* header section styles */
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 90px;
+    /* margin-right: 120px; */
+}
+nav > ul{
+    display: flex;
+}
+nav li{
+    list-style: none;
+    font-size: 18px;
+    font-weight: 600;
+    margin-right: 45px;
+    color: #3a3a3a;
+}
+nav li a{
+    text-decoration: none;
+    color: #3a3a3a;
+
+}
+.cart{
+   display: flex;
+   justify-content: space-around;
+   width: 100px;
+   gap: 10px;
+  
+
+
+}
+/* banner section styles */
+
+.section-1{
+    display: flex;
+   justify-content: space-between;
+   align-items: center;
+    margin-top: 140px;
+    margin-bottom: 70px;
+}
+.section-container{
+    margin-left: 60px;
+}
+.title{
+    color: #3a3a3a;
+    font-size: 52px;
+    font-weight: 700;
+    
+}
+.Preebook{
+    border-radius: 41px;
+    background-color: #e02c6d;
+    color: #fff;
+    font-size: 16px;
+    padding:10px 24px;
+    border: none;
+    margin-top: 16px;
+    
+}
+.fa-solid{
+    margin-left: 10px;
+}
+.section-img{
+    background-image: url(../images/Circle\ design.svg);
+    background-repeat: no-repeat;
+    padding: 30px;
+    padding-left: 2px;
+    
+}
+/* sponsors section styles */
+
+.sponsors{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px;
+    align-items: center;
+    gap: 20px;
+    
+}
+.sponsors img{
+    width: 140px;
+   
+}
+.new{
+    border: 1px solid rgba(131, 127, 127, 0.105) ;
+}
+/* features section styles */
+.features{
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    margin-top: 120px;
+    
+}
+.feature-img{
+    border-radius: 7px;
+}
+.feature-title{
+    color: #0a0826;
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+.feature-grey{
+    color: #6c6c6c;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+/* footer section styles */
+footer{
+    background-color: #0a0826;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    height: 239px;
+    margin-top: 100px;
+   
+
+}
+.footer-title{
+    padding-top: 50px;
+    font-size: 25px;
+    font-weight: 700;
+  
+}
+.footer-description{
+    color: #d9dbe1;
+    font-size: 14px;
+    font-weight: 500;
+}
+.footer-img-icon i{
+    width: 35px;
+    margin-top: 20px;
+}
+
+/* products section styles */
+
+.product-img-container{
+   display: grid;
+   grid-template-columns: repeat(3, 3fr);
+   gap: 30px;
+   padding: 120px;
+   
+
+}
+.product-img{
+  border-radius: 5px;
+  box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+  padding: 20px;
+  width: 300px;
+
+
+}
+.product-title{
+    color: #3a3a3a;
+    font-size: 30px;
+    font-weight:800;
+    text-align: center;
+    margin-top: 120px;
+}
+.product-img h2{
+    color: #18191fdb;
+    font-size: 28px;
+    font-weight: 600; 
+    margin-top: 16px;
+    margin-bottom: 5px;
+}
+.product-img h4{
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 12px;
+    margin-bottom: 6px;
+}
+.star{
+    display: flex;
+    gap: 10px;
+   
+   
+    
+    
+}
+.star p{
+    color: #5e6366;
+    font-size: 12px;
+    
+}
+.star img{
+    width: 15px;
+}
+
+
+/* media query for mobile */
+@media screen and (max-width: 576px){
+    .section-1, nav, .cart,.sponsors,.features{
+        flex-direction: column-reverse;
+    }
+    main{
+        width: 100%;
+    }
+    .features {
+       margin-left: 70px;
+      
+    }
+
+    .product-img-container{
+       grid-template-columns: 1fr;
+    }
+}
+
+/* media query for tab or medium devise */
+@media screen and (min-width:576px) and (max-width: 990px){
+    .section-1, nav, .cart,.sponsors,.features{
+        flex-direction: column-reverse;
+    }
+    main{
+        width: 100%;
+    }
+}
